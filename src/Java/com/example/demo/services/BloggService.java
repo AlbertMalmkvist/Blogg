@@ -1,7 +1,7 @@
 package com.example.demo.services;
 
-import com.example.demo.entities.Auction;
-import com.example.demo.repositories.AuctionRepo;
+import com.example.demo.entities.Blogg;
+import com.example.demo.repositories.BloggRepo;
 import com.example.demo.repositories.BidRepo;
 import com.example.demo.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +12,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Service
-public class AuctionService {
+public class BloggService {
     @Autowired
-    AuctionRepo auctionRepo;
+    BloggRepo bloggRepo;
 
     @Autowired
     UserRepo userRepo;
@@ -22,40 +22,36 @@ public class AuctionService {
     @Autowired
     BidRepo bidRepo;
 
-    public List<Auction> findAllAuctions() {
-        List<Auction> auctions =  (List<Auction>) auctionRepo.findAllByOrderByIdDesc();
+    public List<Blogg> findAllBloggs() {
+        List<Blogg> bloggs =  (List<blogg>) bloggRepo.findAllByOrderByIdDesc();
 
-        for(Auction auction : auctions) {
-            auction.setSellerUsername(userRepo.findById(auction.getSeller()).get().getUsername());
-            bidRepo.findFirstByAuctionIdOrderByBidDesc(auction.getId()).ifPresent(bid -> auction.setHighestBid(bid.getBid()));
+        for(Blogg blogg : bloggs) {
+            blogg.setSellerUsername(userRepo.findById(blogg.getSeller()).get().getUsername());
+            bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId()).ifPresent(bid -> blogg.setHighestBid(bid.getBid()));
         }
-        return auctions;
+        return bloggs;
     }
 
+    public Blogg findBlogg(int id) {
+        Blogg blogg=bloggRepo.findById(id);
+        if ( blogg == null ) return null;
 
+        blogg.setSellerUsername(userRepo.findById(blogg.getSeller()).get().getUsername());
+        bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId()).ifPresent(bid -> blogg.setHighestBid(bid.getBid()));
 
-
-
-    public Auction findAuction(int id) {
-        Auction auction=auctionRepo.findById(id);
-        if ( auction == null ) return null;
-
-        auction.setSellerUsername(userRepo.findById(auction.getSeller()).get().getUsername());
-        bidRepo.findFirstByAuctionIdOrderByBidDesc(auction.getId()).ifPresent(bid -> auction.setHighestBid(bid.getBid()));
-
-        return auction;
+        return Blogg;
     }
     
-    public Auction createNewAuction(Auction auction) {
+    public Blogg createNewBlogg(Blogg blogg) {
         Date nowDate = Date.valueOf(LocalDate.now());
-        Date startDate = Date.valueOf(auction.getStart_time());
-        Date endDate = Date.valueOf(auction.getEnd_time());
+        Date startDate = Date.valueOf(blogg.getStart_time());
+        Date endDate = Date.valueOf(blogg.getEnd_time());
 
         if(nowDate.after(startDate) || startDate.after(endDate) || startDate.equals(endDate)) {
             return null;
         }
 
-        return auctionRepo.save(auction);
+        return BloggRepo.save(Blogg);
     }
 
 }

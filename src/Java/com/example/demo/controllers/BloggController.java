@@ -1,9 +1,9 @@
 package com.example.demo.controllers;
 
-import com.example.demo.entities.Auction;
+import com.example.demo.entities.Blogg;
 import com.example.demo.entities.Bid;
-import com.example.demo.repositories.AuctionRepo;
-import com.example.demo.services.AuctionService;
+import com.example.demo.repositories.BloggRepo;
+import com.example.demo.services.BloggService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,31 +13,23 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/rest")
-public class AuctionController {
+public class BloggController {
     @Autowired
-    AuctionService auctionService;
+    BloggService BloggService;
 
-
-
-
-
-    @GetMapping("/auctions")
-    public List<Auction> getAllAuctions(){
-        return auctionService.findAllAuctions();
+    @GetMapping("/Bloggs")
+    public List<Blogg> getAllBloggs(){
+        return BloggService.findAllBloggs();
     }
 
-    @GetMapping("/auctions/{id}")
-    public Auction getAuction(@PathVariable int id) {
-        return auctionService.findAuction(id);
+    @GetMapping("/Bloggs/{id}")
+    public Blogg getBlogg(@PathVariable int id) {
+        return BloggService.findBlogg(id);
     }
 
-    @PostMapping("/auctions")
-    public Auction createNewAuction(@RequestBody Auction auction) {
-        return auctionService.createNewAuction(auction);
+    @PostMapping("/Bloggs")
+    public Blogg createNewBlogg(@RequestBody Blogg Blogg) {
+        return BloggService.createNewBlogg(Blogg);
     }
-
 
 }
-
-
-

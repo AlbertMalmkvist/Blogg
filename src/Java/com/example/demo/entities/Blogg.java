@@ -3,8 +3,8 @@ package com.example.demo.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "auctions")
-public class Auction {
+@Table(name = "bloggs")
+public class Blogg {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -32,7 +32,7 @@ public class Auction {
         this.highestBid = highestBid;
     }
 
-    public Auction() {
+    public Blogg() {
     }
 
     public String getStart_time() {
