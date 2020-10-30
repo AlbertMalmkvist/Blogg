@@ -1,4 +1,4 @@
-import Vue from './libs/vue.esm.browser.js'
+import Vue from './libs/vue.esm.browser.js.js'
 //import {store} from './store.js'
 //import router from './router.js'
 //import app from './app.js'
