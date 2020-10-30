@@ -15,21 +15,20 @@ import java.util.Optional;
 @RequestMapping("/rest")
 public class BloggController {
     @Autowired
-    BloggService BloggService;
+    BloggService bloggService;
 
     @GetMapping("/Bloggs")
     public List<Blogg> getAllBloggs(){
-        return BloggService.findAllBloggs();
+        return bloggService.findAllBloggs();
     }
 
     @GetMapping("/Bloggs/{id}")
     public Blogg getBlogg(@PathVariable int id) {
-        return BloggService.findBlogg(id);
+        return bloggService.findBlogg(id);
     }
 
     @PostMapping("/Bloggs")
-    public Blogg createNewBlogg(@RequestBody Blogg Blogg) {
-        return BloggService.createNewBlogg(Blogg);
+    public Blogg createNewBlogg(@RequestBody Blogg blogg) {
+        return bloggService.createNewBlogg(Blogg);
     }
-
 }
