@@ -11,9 +11,7 @@ export default {
   <button>Add bid</button><br>
   <span>{{ valid }}</span>
   </form>
- 
   `,
-
 data() {
         
         return {
@@ -22,8 +20,6 @@ data() {
         bidder: '',
         bid_time: '',
         valid: ""
-      
-
         }
     },
 
@@ -42,14 +38,10 @@ data() {
             }
             if (isNaN(this.bid) || this.bid <= this.auction.highestBid) {
                 return this.valid = "***Error*** invalid bid: add higher bid than current"
-       
             }else {
-        
              this.auction.highestBid = this.bid
              this.valid = "Successful you bid at: "+ new Date().toLocaleString()
-           
             }
-
             let result = await fetch('/rest/bids', {
                 method: 'POST',
                 headers: {
@@ -58,14 +50,9 @@ data() {
                 body: JSON.stringify(NewBid)
             })
             result = await result.json()
-
-            
-            
             this.bid = ''
             this.bidder = ''
             this.bid_time = ''
-         
-
         },
 
       

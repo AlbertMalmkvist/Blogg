@@ -13,9 +13,9 @@ export default {
         </div>
         <div>
         <h2>{{auction.title}}</h2>
-        <p>Seller: {{auction.sellerUsername}}</p>
-        <p>Start time: {{auction.start_time}}</p>
-        <p>End time: {{auction.end_time}}</p>
+        <p>Commentor: {{auction.title}}</p>
+        <p>Comment: {{auction.description}}</p>
+        <p>Added: {{auction.add_time}}</p>
         <p>Highest bid: {{ auction.highestBid }}</p>
         <p class="a-description">Description: {{auction.description}}</p>
         <router-link v-if="this.$store.state.user == null " to="/register">Click here to create an account or login to bid!</router-link>
@@ -32,9 +32,6 @@ export default {
                 
                 title: '',
                 seller: '',
-                start_time: '',
-                end_time: '',
-                highestBid: '',
                 description: '',
           
 

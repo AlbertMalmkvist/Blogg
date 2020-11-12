@@ -27,9 +27,6 @@ export default {
             password: '',
             firstName: '',
             lastName: '',
-            email: '',
-            address: '',
-            phone: ''
         }
     },
     methods: {
@@ -41,9 +38,6 @@ export default {
                 password: this.password,
                 first_name: this.firstName,
                 last_name: this.lastName,
-                email: this.email,
-                address: this.address,
-                phone: this.phone
             }
             let result = await fetch('/rest/users', {
                 method: 'POST',
@@ -54,14 +48,10 @@ export default {
             })
             result = await result.json()
             this.$store.commit('appendUser', result)
-
             this.userName = ''
             this.password = ''
             this.firstName = ''
             this.lastName = ''
-            this.email = ''
-            this.address = ''
-            this.phone = ''
         }
     }
 }

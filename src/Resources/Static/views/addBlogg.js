@@ -1,14 +1,14 @@
-import newAuction from '../components/addNewAuction.js'
+import newBlogg from '../components/addNewBlogg.js'
 
 
 export default {
     components: {
-        newAuction
+        newBlogg
     },
     template: `
         <div align="center">
-            <h2 class = "register"> Add Auction </h2>
-            <newAuction> </newAuction>
+            <h2 class = "register"> Add Comment </h2>
+            <newBlogg> </newBlogg>
         </div>
     `
 }
