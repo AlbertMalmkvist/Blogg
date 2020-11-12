@@ -4,9 +4,8 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
-       
         user: null, // currently logged-in user
-        auctions: [],
+        bloggs: [],
          bid: [],
          bidder: null,
     },
@@ -15,37 +14,30 @@ export const store = new Vuex.Store({
         setUser(state, user) {
             state.user = user
         },
-        // AUCTIONS
-        setAuctions(state, auctions) {
-            state.auctions = auctions
+        // Blogg
+        setBloggs(state, bloggs) {
+            state.bloggs = bloggs
         },
-        appendAuction (state, auction) {
-            state.auctions.push(auction)
+        appendAuction (state, blogg) {
+            state.bloggs.push(blogg)
         },
         updateHighestBids(state, bids) {
             bids.forEach(bid => {
-                let auction = state.auctions.find(auction => auction.id === bid.auction_id)
-                auction.highestBid = bid.bid
+                let blogg = state.bloggs.find(blogg => blogg.id === bid.auction_id)
+                blogg.highestBid = bid.bid
             })
         },
-
-
     //   BIDS
-
       setBid(state, bid) {
         state.bid = bid
     },
-
     setBidder(state, bidder) {
         state.bidder = bidder
     },
-
     appendBid (state, bid) {
         state.bid.push(bid)
     }
-  
     }
    // actions: {}
 })
-
 export default store
