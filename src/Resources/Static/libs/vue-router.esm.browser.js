@@ -2628,23 +2628,7 @@ class AbstractHistory extends History {
 
 
 
-class VueRouter {
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+class VueRouter {  
   constructor (options = {}) {
     this.app = null;
     this.apps = [];

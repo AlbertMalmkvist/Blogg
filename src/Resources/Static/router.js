@@ -5,9 +5,8 @@ import store from '/store.js'
 Vue.use(VueRouter)
 
 import home from './views/home.js'
-import register from './views/register.js'
-import auctionDetails from './views/auctionDetails.js'
-import addAuction from './views/addAuction.js'
+import bloggDetails from './views/bloggDetails.js'
+import addBlogg from './views/addBlogg.js'
 import notFound from './views/notFound.js'
 
 const router = new VueRouter({
@@ -23,14 +22,14 @@ const router = new VueRouter({
       component: register
     },
     {
-      name: "auctionDetails",
-      path: '/auctions/:id',
-      component: auctionDetails
+      name: "bloggDetails",
+      path: '/bloggs/:id',
+      component: bloggDetails
     },
     {
-      name: "addAuction",
-      path: '/addAuction',
-      component: addAuction,
+      name: "addblogg",
+      path: '/addblogg',
+      component: addBlogg,
       meta: {
         reguiresAuth: true
       }
