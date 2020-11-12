@@ -1,32 +1,22 @@
-import listAllAuctions from '../components/auctionSummaryList.js'
+import listAllBlogg from '../components/bloggummaryList.js'
 
 export default {
     components: {
-        listAllAuctions
+        listAllBlogg
     },
     
     template: `
         <div class="main-listing">
-            <listAllAuctions />
+            <listAllBlogg/>
 
         </div>
     `,
 
     async created() {
 
-        let auctions = await fetch('/rest/auctions')
-        auctions = await auctions.json()
-        // let bids = await fetch('/rest/current_bid')
-        // bids = await bids.json()
-        // bids.forEach(bid => {
-        //     const auction = auctions.find(auction => auction.id === bid.auction_id)
-        //     if(auction) {
-        //         auction.highest_bid = bid.max_bid
-        //     }
-        // })
-        // //console.log(bids)
-        // //console.log(auctions)
+        let blogg = await fetch('/rest/blogg')
+        blogg = await blogg.json()
 
-        this.$store.commit('setAuctions', auctions)
+        this.$store.commit('setBlogg', blogg)
       }
 }

@@ -14,7 +14,6 @@ export default {
     data() {
         return {
             // lägg till att hitta inloggad
-            user: '',
             title: '',
             description: '',
             addTime: '',
@@ -30,7 +29,6 @@ export default {
             nowDate = nowDate.toLocaleString()
             // LÄGG TILL FÖR KORT LÖSEN MM
             let blogg = {
-                user: this.$store.state.user.id,
                 title: this.title,
                 description: this.description,
                 addTime: this.nowDate,
@@ -47,7 +45,6 @@ export default {
             this.confirmationMessage = this.title + ' has been added as an comment.'
             this.valid = ""
               //clearing the fields
-        this.user = ''
         this.title = ''
         this.description = ''
         this.startTime = ''

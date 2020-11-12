@@ -2,8 +2,6 @@ package com.example.demo.services;
 
 import com.example.demo.entities.Blogg;
 import com.example.demo.repositories.BloggRepo;
-import com.example.demo.repositories.BidRepo;
-import com.example.demo.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,17 +15,13 @@ public class BloggService {
     BloggRepo bloggRepo;
 
     @Autowired
-    UserRepo userRepo;
-
-    @Autowired
     BidRepo bidRepo;
 
     public List<Blogg> findAllBloggs() {
         List<Blogg> bloggs =  (List<blogg>) bloggRepo.findAllByOrderByIdDesc();
 
         for(Blogg blogg : bloggs) {
-            blogg.setSellerUsername(userRepo.findById(blogg.getSeller()).get().getUsername());
-            bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId()).ifPresent(bid -> blogg.setHighestBid(bid.getBid()));
+            bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId());
         }
         return bloggs;
     }
@@ -36,8 +30,7 @@ public class BloggService {
         Blogg blogg=bloggRepo.findById(id);
         if ( blogg == null ) return null;
 
-        blogg.setSellerUsername(userRepo.findById(blogg.getSeller()).get().getUsername());
-        bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId()).ifPresent(bid -> blogg.setHighestBid(bid.getBid()));
+        bidRepo.findFirstByBloggIdOrderByBidDesc(blogg.getId());
 
         return Blogg;
     }

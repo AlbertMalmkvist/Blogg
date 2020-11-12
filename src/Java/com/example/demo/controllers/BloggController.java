@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import com.example.demo.entities.Blogg;
-import com.example.demo.entities.Bid;
 import com.example.demo.repositories.BloggRepo;
 import com.example.demo.services.BloggService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,79 +1,30 @@
-import newBid from  '../components/addNewBid.js'
-import navbarLoginComponent from '../components/navbarLoginComponent.js'
-
-
 export default {
-    components: {
-        newBid,
-        navbarLoginComponent
-    },
     template: `
-    <div class="auction-details">
-        <div class="auction-main-picture" :style="{'background-image': 'url(' + auction.main_image + ')'}">
-        </div>
+    <div class="blogg-details">
         <div>
-        <h2>{{auction.title}}</h2>
-        <p>Commentor: {{auction.title}}</p>
-        <p>Comment: {{auction.description}}</p>
-        <p>Added: {{auction.add_time}}</p>
-        <p>Highest bid: {{ auction.highestBid }}</p>
-        <p class="a-description">Description: {{auction.description}}</p>
-        <router-link v-if="this.$store.state.user == null " to="/register">Click here to create an account or login to bid!</router-link>
-        <navbarLoginComponent v-if ="this.$store.state.user == null"/>
-        <newBid :auction="auction"
-        v-if= "Date.parse(this.auction.end_time) > Date.now() && this.$store.state.user && this.$store.state.user.id !== auction.seller"/>
-       <p v-else-if= "Date.parse(this.auction.end_time) < Date.now()">***This Product can not accept anymore bids***</p>
+        <h2>{{blogg.title}}</h2>
+        <p>Title: {{blogg.title}}</p>
+        <p>Comment: {{blogg.description}}</p>
+        <p>Added: {{blogg.add_time}}</p>
+        <p class="a-description">Description: {{blogg.description}}</p>
+        v-if= "Date.parse(this.blogg.end_time) > Date.now() && this.$store.state.user && this.$store.state.user.id !== blogg.blogger"/>
+       <p v-else-if= "Date.parse(this.blogg.end_time) < Date.now()">***This Product can not accept anymore bids***</p>
         </div>
     </div>
     `,
     data() {
         return {
-            auction: {
-                
+            blogg: {
                 title: '',
-                seller: '',
                 description: '',
-          
-
-                
-              
-            
             }
         }
     },
-
-
-
     async created() {
-
-
-        
         // all dynamic params
         //console.log(this.$route.params)
-
-        let auction = await fetch('/rest/auctions/' + this.$route.params.id)
-        auction = await auction.json()
-      
-       this.auction = auction
-
-       // console.log('Adding setInterval...')
-       this.fetchInterval = setInterval(async () => {
-            let highestBids = await fetch('/rest/bids/highest?auctions=' + this.auction.id)
-            highestBids = await highestBids.json()
-            if(highestBids && highestBids.length === 1) {
-                let highestBid = highestBids[0]
-                this.auction.highestBid = highestBid.bid
-            }
-            //console.log(highestBids)
-       	}, 1000)
+        let blogg = await fetch('/rest/bloggs/' + this.$route.params.id)
+        blogg = await blogg.json() 
+       this.blogg = blogg
      },
-
-     beforeDestroy() {
-        //console.log("Removing setInterval...")
-        clearInterval(this.fetchInterval)
-     }
-
-
-
-
 }
