@@ -1,4 +1,4 @@
-import listAllBlogg from '../components/bloggummaryList.js'
+import listAllBlogg from '../components/bloggsummaryList.js'
 
 export default {
     components: {
@@ -7,7 +7,7 @@ export default {
     
     template: `
         <div class="main-listing">
-            <listAllBlogg/>
+            <listAllBlogg />
 
         </div>
     `,
