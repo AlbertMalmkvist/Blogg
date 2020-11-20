@@ -1,18 +1,23 @@
 package com.example.demo.entities;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "bloggs")
 public class Blogg {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private String description;
-    private String publishing_time;
+    private Date publication;
+    ;
 
-    public Blogg() {
+    public Blogg(int id, String title, String description, java.sql.Date publication) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.publication = publication;
     }
 
     public int getId() {
@@ -39,11 +44,11 @@ public class Blogg {
         this.description = description;
     }
 
-    public String getPublishing_time() {
-        return publishing_time;
+    public Date getPublication() {
+        return publication;
     }
 
-    public void setPublishing_time(String publishing_time) {
-        this.publishing_time = publishing_time;
+    public void setPublication(Date publication) {
+        this.publication = publication;
     }
 }
