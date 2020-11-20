@@ -1,25 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f0ae723-1f65-43a8-bda8-4769e6c8aa0b" name="Default Changelist" comment="" />
+    <list default="true" id="2541faa1-303d-4e92-8077-6244ce1e8cfc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kBsn78z8gsdVWlpve5suMeuIoE" />
+  <component name="ProjectId" id="1jChHVjVumm1AxuZIz7Mk8yvK9h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lennart\Documents\Bloggen\.idea\libraries" />
+      <recent name="C:\Users\Lennart\Documents\Bloggen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lennart\Documents\Bloggen" />
+      <recent name="C:\Users\Lennart\Documents\Bloggen\.idea" />
+      <recent name="C:\Users\Lennart\Documents\Bloggen\.mvn" />
+      <recent name="C:\Users\Lennart\Documents\Bloggen\.mvn\wrapper" />
+      <recent name="C:\Users\Lennart\Documents\Bloggen\.idea\libraries" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Blogg" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.BloggenApplication" />
+      <module name="Bloggen" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blogg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -38,30 +93,117 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6f0ae723-1f65-43a8-bda8-4769e6c8aa0b" name="Default Changelist" comment="" />
-      <created>1605185482450</created>
+      <changelist id="2541faa1-303d-4e92-8077-6244ce1e8cfc" name="Default Changelist" comment="" />
+      <created>1603313893290</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605185482450</updated>
+      <updated>1603313893290</updated>
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605185732628">
+    <state x="495" y="82" key="#Blogg" timestamp="1605186899217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605185732628" />
-    <state x="549" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605185681892">
+    <state x="495" y="82" key="#Blogg/0.0.1536.824@0.0.1536.824" timestamp="1605186899217" />
+    <state x="361" y="75" key="#Inspections" timestamp="1605612029925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="223" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605185681892" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1605185542319">
+    <state x="361" y="75" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1605612029925" />
+    <state x="226" y="25" width="1089" height="798" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605864965759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605185542319" />
-    <state x="279" y="58" key="SettingsEditor" timestamp="1605185727960">
+    <state x="226" y="25" width="1089" height="798" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605864965759" />
+    <state x="328" y="207" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605615144045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605185727960" />
+    <state x="328" y="207" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1605615144045" />
+    <state x="617" y="208" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605864080117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="617" y="208" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1605864080117" />
+    <state x="496" y="105" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605612322949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="105" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1605612322949" />
+    <state x="620" y="305" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1605185750039">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="305" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1605185750039" />
+    <state x="349" y="71" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1605185361381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="71" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1536.824@0.0.1536.824" timestamp="1605185361381" />
+    <state x="427" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605615197964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="427" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1605615197964" />
+    <state x="571" y="303" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605615146314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="571" y="303" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1605615146314" />
+    <state x="520" y="282" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605182931725">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="520" y="282" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1605182931725" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1605185260013">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605185260013" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605866737595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605866737595" />
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog" timestamp="1605612724620">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="71" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605612724620" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605615095197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605615095197" />
+    <state x="498" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605613536528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="315" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1605613536528" />
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605187293138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="580" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605187293138" />
+    <state x="209" y="40" key="new project wizard" timestamp="1605615667572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="40" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605615667572" />
   </component>
 </project>
