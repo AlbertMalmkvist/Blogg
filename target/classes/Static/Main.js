@@ -8,9 +8,3 @@ new Vue({
     router,
     render: h => h(app)
 }).$mount('#app');
-
-async function getAllUsers() {
-    let users = await fetch('/rest/users')
-    users = await users.json()
-    console.log(users)
-}
