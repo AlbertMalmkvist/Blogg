@@ -27,8 +27,8 @@ public class BloggService {
     }
     public Blogg createNewBlogg(Blogg blogg) {
         Date nowDate = Date.valueOf(LocalDate.now());
-        Date publishing_time = Date.valueOf(blogg.getPublishing_time());
-        if(publishing_time.after(nowDate)) {
+        Date publication = Date.valueOf(String.valueOf(blogg.getPublication()));
+        if(publication.after(nowDate)) {
             return null;
         }
         return bloggRepo.save(blogg);
