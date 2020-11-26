@@ -1,0 +1,7 @@
+com\example\demo\configs\MyWebMvcConfigurer.class
+com\example\demo\BloggenApplication.class
+com\example\demo\services\BloggService.class
+com\example\demo\repositories\BloggRepo.class
+com\example\demo\controllers\BloggController.class
+com\example\demo\configs\MyWebMvcConfigurer$1.class
+com\example\demo\entities\Blogg.class
