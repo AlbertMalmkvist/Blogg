@@ -1,7 +1,9 @@
 package com.example.demo.entities;
 
-import javax.persistence.*;
-import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Blogg {
@@ -10,10 +12,10 @@ public class Blogg {
     private int id;
     private String title;
     private String description;
-    private Date publication;
+    private String publication;
     ;
 
-    public Blogg(int id, String title, String description, java.sql.Date publication) {
+    public Blogg(int id, String title, String description, String publication) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -44,11 +46,11 @@ public class Blogg {
         this.description = description;
     }
 
-    public Date getPublication() {
+    public String getPublication() {
         return publication;
     }
 
-    public void setPublication(Date publication) {
+    public void setPublication(String publication) {
         this.publication = publication;
     }
 }
