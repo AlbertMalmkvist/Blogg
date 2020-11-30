@@ -1,10 +1,8 @@
 export default {
     template: `
         <form @submit.prevent = "addNewBlogg" class = "bloggform">
-              <input required v-model = "title" type = "text"
-              placeholder = "Enter title">
-                <input required v-model = "description" type = "text-box"
-                placeholder = "Enter description">
+              <input required v-model = "title" type = "text" placeholder = "Enter title">
+                <input required v-model = "description" type = "text-box" placeholder = "Enter description">
 
             <button>Add Comment</button>
             <p>{{ confirmationMessage }}</p>
