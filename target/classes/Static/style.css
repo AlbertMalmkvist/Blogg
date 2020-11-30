@@ -7,9 +7,11 @@ main {
 
 }
 
+
+
 body{
     margin: 0;
-    background-image: url('./pictures/white-background.jpg');
+    color: red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +19,7 @@ body{
 
 .navbar-top {
     display: flex;
-    background-image: url('./pictures/white-background.jpg');
+    background-color: black;
     background-blend-mode: screen;
     flex-direction: row;
     align-items: center;
@@ -36,16 +38,14 @@ body{
     margin-right: auto;
 }
 .top-picture {
-    background-image: url('./pictures/auction_hammer.jpg');
     height: 400px;
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: black;
     line-height: 400px;
     font-size: 125px;
 }
-
 ul {
     display: flex;
     padding: 10px;
@@ -57,7 +57,7 @@ ul {
 
 .auction-card  {
     list-style: none;
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(0, 0, 0);
     min-height: 400px;
     padding: 7px;
     margin: 5px;
@@ -70,12 +70,6 @@ ul {
     border: 1px solid gray;
 }
 
-.auction-card-photo {
-    height: 300px;
-    min-width: 25pc;
-    background-position: center;
-    background-size: cover;
-}
 
 .auction-main-picture {
     height: 300px;
@@ -91,9 +85,9 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
 .auction-details > {
     padding: 10px;
-
 }
 
 .footer {
@@ -102,45 +96,6 @@ ul {
     opacity: 80%;
 }
 
-
-.navbarLogoutComponent {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-#errorLoginMessage, #registrationErrorMessage {
-    font-weight: bold;
-    background-color: #F08080;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.search-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-.register {
-    
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    background-color: rgb(245, 244, 244);
-    justify-content: center;
-    background-size: cover;
-    width: 160px;
-
-}
-.registerform {
-    text-align: right;
-    background-color: rgb(245, 244, 244);
-    background-size: cover;
-    background-position: center;
-    width: 230px;
-    
-}
 .auctionform {
     text-align: right;
     background-color: rgb(245, 244, 244);

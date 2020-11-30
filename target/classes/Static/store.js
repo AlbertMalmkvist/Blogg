@@ -11,6 +11,9 @@ export const store = new Vuex.Store({
         setBloggs(state, bloggs) {
             state.bloggs = bloggs
         },
+        appendBloggs (state, blogg) {
+            state.bloggs.push(blogg)
+        },
     }
 })
 export default store
