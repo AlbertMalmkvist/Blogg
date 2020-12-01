@@ -15,8 +15,8 @@ public class BloggController {
     BloggService bloggService;
 
     @GetMapping("/Article")
-    public List<Blogg> getAllBlogg(){
-        return bloggService.findAllBloggs();
+    public List<Blogg> getAllArticle(){
+        return bloggService.findAllArticle();
     }
 
     @GetMapping("/Article/{id}")

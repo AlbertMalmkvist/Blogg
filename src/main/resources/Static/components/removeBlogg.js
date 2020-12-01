@@ -1,5 +1,5 @@
 export default {
-    props: ['article'],
+    props: ['blogg'],
    
     template: `
         <form @submit.prevent = "removeBlogg">

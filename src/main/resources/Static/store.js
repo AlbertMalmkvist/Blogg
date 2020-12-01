@@ -7,15 +7,15 @@ export const store = new Vuex.Store({
         Article: [],
     },
     mutations: {
-        setArticle(state, Article) {
+        setBloggs(state, Article) {
             state.Article = Article
         },
-        appendArticle (state, article) {
-            state.Article.push(article)
+        appendblogg (state, blogg) {
+            state.Article.push(blogg)
         },
-        removeArticle(state, id){
+        removeblogg(state, id){
             index = state.Article.findIndex(Article => Article.id == id)
-            state.cars.splice(index, 1)
+            state.Article.splice(index, 1)
            },
     }
 })

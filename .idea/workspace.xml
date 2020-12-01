@@ -6,30 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef7b20d9-c3c0-49f1-a33f-8a815ce07b68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloggenNamnlista.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/BloggController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/BloggController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/BloggService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/services/BloggService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/addNewBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/addNewBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/bloggSummaryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/bloggSummaryItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/removeBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/removeBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/bloggDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/bloggDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/BloggSummaryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/BloggSummaryList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/addNewBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/addNewBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/bloggSummaryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/bloggSummaryItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/removeBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/removeBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/views/addBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/views/addBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/views/bloggDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/views/bloggDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/views/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/configs/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/configs/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Blogg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Blogg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

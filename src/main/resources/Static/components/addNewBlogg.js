@@ -22,7 +22,7 @@ export default {
     methods: {
         async addNewBlogg() {
 
-            let article = {
+            let blogg = {
                 title: this.title,
                 description: this.description,
                 publication: new Date(),
@@ -32,11 +32,11 @@ export default {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(article)
+                body: JSON.stringify(blogg)
             })
             result = await result.json()
             this.$store.commit('appendblogg', result)
-            this.confirmationMessage = this.title + ' has been added as an comment.'
+            this.confirmationMessage = this.title + ' has been added as an Article.' + this.publication + this.description
             this.valid = ""
               //clearing the fields
         this.title = ''

@@ -9,14 +9,14 @@ new Vue({
     render: h => h(app)
 }).$mount('#app');
 
-async function getAllArticle() {
+async function getAllBloggs() {
     let Article = await fetch('/rest/Article')
     Article = await Article.json()
     console.log(Article)
 }
 
-async function getArticleById(id) {
-    let article = await fetch('/rest/Article' + id)
-    article = await article.json()
-    console.log(article)
+async function getBloggById(id) {
+    let blogg = await fetch('/rest/Article' + id)
+    blogg = await blogg.json()
+    console.log(blogg)
 }

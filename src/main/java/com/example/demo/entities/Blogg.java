@@ -1,11 +1,9 @@
 package com.example.demo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "blogg")
 public class Blogg {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,12 +11,15 @@ public class Blogg {
     private String title;
     private String description;
     private String publication;
-    ;
 
-    public Blogg(int id, String title, String description, String publication) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
+    public Blogg {
+    }
+
+    public String getPublication() {
+        return publication;
+    }
+
+    public void setPublication(String publication) {
         this.publication = publication;
     }
 
@@ -44,13 +45,5 @@ public class Blogg {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getPublication() {
-        return publication;
-    }
-
-    public void setPublication(String publication) {
-        this.publication = publication;
     }
 }

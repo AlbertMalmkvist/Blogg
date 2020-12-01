@@ -1,12 +1,12 @@
 export default {
-    props: ['article'],
+    props: ['blogg'],
 
     template: `
     <div>
     <label>Checking</label> 
-        <li @click.self="showBloggDetails(article.id)" class="Article-card">
-                    Title: {{ article.title }} <br>
-                    Published: {{ article.publication }} <br/>
+        <li @click.self="showBloggDetails(blogg.id)" class="Article-card">
+                    Title: {{ blogg.title }} <br>
+                    Published: {{ blogg.publication }} <br/>
         </li>
         </div>
     `,
