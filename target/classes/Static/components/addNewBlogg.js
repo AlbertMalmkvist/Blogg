@@ -4,7 +4,7 @@ export default {
               <input required v-model = "title" type = "text" placeholder = "Enter title">
                 <input required v-model = "description" type = "text-box" placeholder = "Enter description">
 
-            <button>Add Comment</button>
+            <button>Add Article</button>
             <p>{{ confirmationMessage }}</p>
             <p>{{valid}}</p>
         </form>
