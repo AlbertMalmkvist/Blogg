@@ -4,10 +4,12 @@ export default {
     ],
     template: `
     <div>
+    <label>Checking</label>  
         <li
             @click.self="showBloggDetails(article.id)"
             class="Article-card">
                     Title: {{ article.title }} <br>
+                    Published: {{ article.publication }} <br/>
         </li>
         </div>
     `,

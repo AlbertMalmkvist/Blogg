@@ -7,7 +7,7 @@ export default {
     },
     template: `
         <div align="center">
-            <h2 class = "register"> Add Comment </h2>
+            <h2 class = "register"> Add Article </h2>
             <newBlogg> </newBlogg>
         </div>
     `

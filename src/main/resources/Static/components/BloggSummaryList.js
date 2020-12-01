@@ -16,8 +16,7 @@ export default {
     <input type="text" v-model="search" placeholder="Search title.."/>
     </div>
     <ul>
-        <bloggSummaryItem v-for="article of Article" :key="article.id" :article="article"
-        v-if="Date.parse(article.publishing_time) < Date.now()" />
+        <bloggSummaryItem v-for="article of Article" :key="article.id" :article="article"/>
      </ul>
      </div>
     `,

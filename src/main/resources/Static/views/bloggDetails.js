@@ -1,8 +1,8 @@
-import removeBlogg from  '../components/removeBlogg.js'
+//import removeBlogg from  '../components/removeBlogg.js'
 
 export default {
     components: {
-        removeBlogg,
+        //removeBlogg,<removeBlogg><removeBlogg/>
     },
     template: `
     <div class="Article-details">
@@ -10,7 +10,7 @@ export default {
         <h2>{{Article.title}}</h2>
         <p class="a-description">Description: {{Article.description}}</p>
         <p>Published: {{Article.published}}</p>
-        <removeBlogg><removeBlogg/>
+       
 
         </div>
     </div>

@@ -22,17 +22,17 @@ export default {
     methods: {
         async addNewBlogg() {
 
-            let blogg = {
+            let article = {
                 title: this.title,
                 description: this.description,
                 publication: new Date(),
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(article)
             })
             result = await result.json()
             this.$store.commit('appendblogg', result)

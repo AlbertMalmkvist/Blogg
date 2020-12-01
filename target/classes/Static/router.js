@@ -18,16 +18,13 @@ const router = new VueRouter({
     },
     {
       name: "bloggDetails",
-      path: '/bloggs/:id',
+      path: '/Article/:id',
       component: bloggDetails
     },
     {
-      name: "addblogg",
-      path: '/addblogg',
+      name: "addBlogg",
+      path: '/addBlogg',
       component: addBlogg,
-      meta: {
-        reguiresAuth: true
-      }
     },
     {
       path: "/404",

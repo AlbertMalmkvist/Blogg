@@ -14,7 +14,7 @@ export default {
             // lägg till att hitta inloggad
             title: '',
             description: '',
-            publishing_Time: '',
+            publication: '',
             confirmationMessage: '',
             valid: ""
         }
@@ -22,21 +22,17 @@ export default {
     methods: {
         async addNewBlogg() {
 
-            let nowDate = new Date()
-            nowDate.setHours(0, 0, 0, 0)
-            nowDate = nowDate.toLocaleString()
-            // LÄGG TILL FÖR KORT LÖSEN MM
-            let blogg = {
+            let article = {
                 title: this.title,
                 description: this.description,
-                publishing_Time: this.nowDate,
+                publication: new Date(),
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(article)
             })
             result = await result.json()
             this.$store.commit('appendblogg', result)

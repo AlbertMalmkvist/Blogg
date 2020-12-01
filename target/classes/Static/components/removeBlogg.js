@@ -1,44 +1,41 @@
 export default {
+    props: ['article'],
+   
     template: `
-        <form @submit.prevent = "removeBlogg" class = "bloggform">
-              <input required v-model = "title" type = "text" placeholder = "Enter title of Artikel which is to be removed">
+        <form @submit.prevent = "removeBlogg">
 
             <button>Delete</button>
-            <p>{{ confirmationMessage }}</p>
             <p>{{valid}}</p>
         </form>
     `,
     data() {
         return {
-            // lägg till att hitta inloggad
             title: '',
-            confirmationMessage: '',
+            description: '',
+            publication: '',
             valid: ""
         }
     },
     methods: {
         async removeBlogg() {
-            // LÄGG TILL FÖR KORT LÖSEN MM
-            let blogg = {
+            let Article = {
                 title: this.title,
                 description: this.description,
-                publishing_Time: this.nowDate,
+                publication: this.nowDate,
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(Article)
             })
             result = await result.json()
-            this.$store.commit('appendblogg', result)
-            this.confirmationMessage = this.title + ' has been added as an comment.'
+            this.$store.commit('removeBlogg', result)
             this.valid = ""
-              //clearing the fields
-        this.title = ''
-        this.description = ''
-        this.publishing_Time = ''
+            this.title = ''
+            this.description = ''
+            this.publication = ''
     }
 }
 }

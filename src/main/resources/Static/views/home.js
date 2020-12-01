@@ -1,4 +1,4 @@
-import listAllBlogg from '../components/bloggummaryList.js'
+import listAllBlogg from '../components/bloggSummaryList.js'
 
 export default {
     components: {

@@ -31,7 +31,7 @@ export default {
                 body: JSON.stringify(Article)
             })
             result = await result.json()
-            this.$store.commit('removeArticle', result)
+            this.$store.commit('removeBlogg', result)
             this.valid = ""
             this.title = ''
             this.description = ''

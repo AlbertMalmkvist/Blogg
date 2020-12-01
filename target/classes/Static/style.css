@@ -17,7 +17,7 @@ body{
 
 .navbar-top {
     display: flex;
-    background-color: black;
+    background-color: red;
     background-blend-mode: screen;
     flex-direction: row;
     align-items: center;

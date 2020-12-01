@@ -15,10 +15,8 @@ public class BloggService {
     BloggRepo bloggRepo;
 
     public List<Blogg> findAllBloggs() {
-        List<Blogg> bloggs =  (List<Blogg>) bloggRepo.findAllByOrderByIdDesc();
-        for(Blogg blogg : bloggs) {
-        }
-        return bloggs;
+        List<Blogg> Article =  (List<Blogg>) bloggRepo.findAllByOrderByIdDesc();
+        return Article;
     }
     public Blogg findBlogg(int id) {
         Blogg blogg=bloggRepo.findById(id);

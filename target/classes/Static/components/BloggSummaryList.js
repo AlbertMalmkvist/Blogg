@@ -16,15 +16,14 @@ export default {
     <input type="text" v-model="search" placeholder="Search title.."/>
     </div>
     <ul>
-        <bloggSummaryItem v-for="blogg of bloggs" :key="blogg.id" :blogg="blogg"
-        v-if="Date.parse(blogg.publishing_time) >= Date.now()" />
+        <bloggSummaryItem v-for="article of Article" :key="article.id" :article="article"/>
      </ul>
      </div>
     `,
     computed: {
-        bloggs() {
-            return this.$store.state.bloggs.filter((blogg) => {
-                return blogg.title.toLowerCase().match(this.search.toLowerCase());
+        Article() {
+            return this.$store.state.Article.filter((article) => {
+                return article.title.toLowerCase().match(this.search.toLowerCase());
             })
         }
     },
