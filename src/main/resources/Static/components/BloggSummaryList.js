@@ -16,7 +16,7 @@ export default {
     <input type="text" v-model="search" placeholder="Search title.."/>
     </div>
     <ul>
-        <bloggSummaryItem v-for="article of Article" :key="article.id" :article="article"/>
+        <bloggSummaryItem v-for="article of Article" :key="article.id" :article="article" />
      </ul>
      </div>
     `,
