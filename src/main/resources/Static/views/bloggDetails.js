@@ -10,7 +10,7 @@ export default {
         <h2>{{Article.title}}</h2>
         <p class="a-description">Description: {{Article.description}}</p>
         <p>Published: {{Article.published}}</p>
-        <removeBlogg/>
+        <removeBlogg><removeBlogg/>
 
         </div>
     </div>

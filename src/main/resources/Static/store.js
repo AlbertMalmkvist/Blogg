@@ -8,8 +8,8 @@ export const store = new Vuex.Store({
     },
     mutations: {
         // Artikel
-        setArticle(state, article) {
-            state.Article = article
+        setArticle(state, Article) {
+            state.Article = Article
         },
         appendArticle (state, article) {
             state.Article.push(article)

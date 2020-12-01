@@ -1,6 +1,8 @@
 export default {
+    props: ['article'],
+   
     template: `
-        <form @submit.prevent = "removeBlogg" class = "Articleform">
+        <form @submit.prevent = "removeBlogg">
 
             <button>Delete</button>
             <p>{{valid}}</p>
@@ -22,7 +24,7 @@ export default {
                 publication: this.nowDate,
             }
             let result = await fetch('/rest/Article', {
-                method: 'POST',
+                method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -1,21 +1,21 @@
-import listAllArticle from '../components/ArticleummaryList.js'
+import listAllBlogg from '../components/bloggummaryList.js'
 
 export default {
     components: {
-        listAllArticle
+        listAllBlogg
     },
     
     template: `
         <div class="main-listing">
-            <listAllArticle />
+            <listAllBlogg />
         </div>
     `,
 
     async created() {
 
-        let artikel = await fetch('/rest/artikel')
-        artikel = await artikel.json()
+        let Article = await fetch('/rest/Article')
+        Article = await Article.json()
 
-        this.$store.commit('setArtikel', artikel)
+        this.$store.commit('setArticle', Article)
       }
 }
