@@ -1,31 +1,31 @@
-import removeBid from  '../components/removeBid.js'
+import removeartikel from  '../components/removeArtikel.js'
 
 export default {
     components: {
-        removeBid,
+        removeartikel,
     },
     template: `
-    <div class="blogg-details">
+    <div class="artikel-details">
         <div>
-        <h2>{{blogg.title}}</h2>
-        <p class="a-description">Description: {{blogg.description}}</p>
-        <p>Published: {{blogg.publishing_time}}</p>
-        <removeBid/>
+        <h2>{{artikel.title}}</h2>
+        <p class="a-description">Description: {{artikel.description}}</p>
+        <p>Published: {{artikel.}}</p>
+        <removeartikel/>
 
         </div>
     </div>
     `,
     data() {
         return {
-            blogg: {
+            artikel: {
                 title: '',
                 description: '',
             }
         }
     },
     async created() {
-        let blogg = await fetch('/rest/bloggs/' + this.$route.params.id)
-        blogg = await blogg.json() 
-       this.blogg = blogg
+        let artikel = await fetch('/rest/Article/' + this.$route.params.id)
+        artikel = await artikel.json() 
+       this.artikel = artikel
      },
 }

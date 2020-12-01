@@ -13,15 +13,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .authorizeRequests()
-                //.antMatchers(HttpMethod.GET, "/").authenticated()
-                .antMatchers(HttpMethod.POST, "/rest/auctions/**").authenticated()
-                .antMatchers(HttpMethod.POST, "/rest/bids/**").authenticated()
-                .antMatchers("/auth/**").permitAll()
-                .and()
-                .formLogin()
-                .loginPage("/login")
+
+            .csrf().disable()
+            .authorizeRequests()
+            .antMatchers(HttpMethod.GET, "/rest/Article/**").authenticated()
+            .antMatchers("/auth/**").permitAll()
+            .and()
+            .formLogin()
+            .loginPage("/login")
         ;
     }
 }

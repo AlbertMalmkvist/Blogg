@@ -5,8 +5,8 @@ import store from '/store.js'
 Vue.use(VueRouter)
 
 import home from './views/home.js'
-import bloggDetails from './views/bloggDetails.js'
-import addBlogg from './views/addBlogg.js'
+import ArticleDetails from './views/ArticleDetails.js'
+import addArticle from './views/addArticle.js'
 import notFound from './views/notFound.js'
 
 const router = new VueRouter({
@@ -17,14 +17,14 @@ const router = new VueRouter({
       component: home
     },
     {
-      name: "bloggDetails",
-      path: '/bloggs/:id',
-      component: bloggDetails
+      name: "ArticleDetails",
+      path: '/Articles/:id',
+      component: ArticleDetails
     },
     {
-      name: "addblogg",
-      path: '/addblogg',
-      component: addBlogg,
+      name: "addArticle",
+      path: '/addArticle',
+      component: addArticle,
       meta: {
         reguiresAuth: true
       }

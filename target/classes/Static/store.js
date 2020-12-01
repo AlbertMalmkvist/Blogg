@@ -4,15 +4,15 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
-        bloggs: [],
+        Articles: [],
     },
     mutations: {
-        // Blogg
-        setBloggs(state, bloggs) {
-            state.bloggs = bloggs
+        // Article
+        setArticles(state, Articles) {
+            state.Articles = Articles
         },
-        appendBloggs (state, blogg) {
-            state.bloggs.push(blogg)
+        appendArticles (state, Article) {
+            state.Articles.push(Article)
         },
     }
 })

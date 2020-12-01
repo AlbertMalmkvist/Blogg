@@ -1,24 +1,24 @@
 export default {
     props: [
-        'blogg'
+        'Article'
     ],
     template: `
     <div>
         <li
-            @click.self="showBloggDetails(blogg.id)"
-            class="blogg-card">
-                    Title: {{ blogg.title }} <br>
+            @click.self="showArticleDetails(Article.id)"
+            class="Article-card">
+                    Title: {{ Article.title }} <br>
         </li>
         </div>
     `,
     computed: {
-        Bloggs() {
-            return this.$store.state.bloggs
+        Articles() {
+            return this.$store.state.Articles
         }
     },
     methods: {
-        showBloggDetails(id) {
-            this.$router.push('/bloggs/' + id)
+        showArticleDetails(id) {
+            this.$router.push('/Articles/' + id)
         }
     }
 }

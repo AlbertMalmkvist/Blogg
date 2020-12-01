@@ -1,10 +1,10 @@
 export default {
     template: `
-        <form @submit.prevent = "addNewBlogg" class = "bloggform">
+        <form @submit.prevent = "addNewArtikel" class = "blooggform">
               <input required v-model = "title" type = "text" placeholder = "Enter title">
                 <input required v-model = "description" type = "text-box" placeholder = "Enter description">
 
-            <button>Add Comment</button>
+            <button>Add Artikel</button>
             <p>{{ confirmationMessage }}</p>
             <p>{{valid}}</p>
         </form>
@@ -14,38 +14,33 @@ export default {
             // lägg till att hitta inloggad
             title: '',
             description: '',
-            publishing_Time: '',
+            publication: '',
             confirmationMessage: '',
             valid: ""
         }
     },
     methods: {
-        async addNewBlogg() {
+        async addNewArtikel() {
 
-            let nowDate = new Date()
-            nowDate.setHours(0, 0, 0, 0)
-            nowDate = nowDate.toLocaleString()
-            // LÄGG TILL FÖR KORT LÖSEN MM
-            let blogg = {
+            let artikel = {
                 title: this.title,
                 description: this.description,
-                publishing_Time: this.nowDate,
+                publication: new Date(),
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(artikel)
             })
             result = await result.json()
-            this.$store.commit('appendblogg', result)
-            this.confirmationMessage = this.title + ' has been added as an comment.'
+            this.$store.commit('appendartikel', result)
+            this.confirmationMessage = this.title + ' has been added as an artikel.'
             this.valid = ""
-              //clearing the fields
         this.title = ''
         this.description = ''
-        this.publishing_Time = ''
+        this.publication = ''
     }
 }
 }

@@ -1,6 +1,6 @@
 export default {
     template: `
-        <form @submit.prevent = "removeBlogg" class = "bloggform">
+        <form @submit.prevent = "removeArticle" class = "Articleform">
               <input required v-model = "title" type = "text" placeholder = "Enter title of Artikel which is to be removed">
 
             <button>Delete</button>
@@ -17,22 +17,22 @@ export default {
         }
     },
     methods: {
-        async removeBlogg() {
+        async removeArticle() {
             // LÄGG TILL FÖR KORT LÖSEN MM
-            let blogg = {
+            let Article = {
                 title: this.title,
                 description: this.description,
                 publishing_Time: this.nowDate,
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Articles', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(Article)
             })
             result = await result.json()
-            this.$store.commit('appendblogg', result)
+            this.$store.commit('appendArticle', result)
             this.confirmationMessage = this.title + ' has been added as an comment.'
             this.valid = ""
               //clearing the fields

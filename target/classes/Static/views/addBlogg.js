@@ -1,14 +1,14 @@
-import newBlogg from '../components/addNewBlogg.js'
+import newArticle from '../components/addNewArticle.js'
 
 
 export default {
     components: {
-        newBlogg
+        newArticle
     },
     template: `
         <div align="center">
             <h2 class = "register"> Add Comment </h2>
-            <newBlogg> </newBlogg>
+            <newArticle> </newArticle>
         </div>
     `
 }

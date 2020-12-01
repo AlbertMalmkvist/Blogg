@@ -1,6 +1,6 @@
 export default {
     template: `
-        <form @submit.prevent = "addNewBlogg" class = "bloggform">
+        <form @submit.prevent = "addNewArticle" class = "Articleform">
               <input required v-model = "title" type = "text" placeholder = "Enter title">
                 <input required v-model = "description" type = "text-box" placeholder = "Enter description">
 
@@ -20,26 +20,26 @@ export default {
         }
     },
     methods: {
-        async addNewBlogg() {
+        async addNewArticle() {
 
             let nowDate = new Date()
             nowDate.setHours(0, 0, 0, 0)
             nowDate = nowDate.toLocaleString()
             // LÄGG TILL FÖR KORT LÖSEN MM
-            let blogg = {
+            let Article = {
                 title: this.title,
                 description: this.description,
                 publishing_Time: this.nowDate,
             }
-            let result = await fetch('/rest/bloggs', {
+            let result = await fetch('/rest/Articles', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(blogg)
+                body: JSON.stringify(Article)
             })
             result = await result.json()
-            this.$store.commit('appendblogg', result)
+            this.$store.commit('appendArticle', result)
             this.confirmationMessage = this.title + ' has been added as an comment.'
             this.valid = ""
               //clearing the fields
