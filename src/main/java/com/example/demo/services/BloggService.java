@@ -15,10 +15,10 @@ public class BloggService {
     BloggRepo bloggRepo;
 
     public List<Blogg> findAllBloggs() {
-        List<Blogg> bloggs =  (List<Blogg>) bloggRepo.findAllByOrderByIdDesc();
-        for(Blogg blogg : bloggs) {
+        List<Blogg> Article =  (List<Blogg>) bloggRepo.findAllByOrderByIdDesc();
+        for(Blogg blogg : Article) {
         }
-        return bloggs;
+        return Article;
     }
     public Blogg findBlogg(int id) {
         Blogg blogg=bloggRepo.findById(id);
@@ -26,7 +26,7 @@ public class BloggService {
         return blogg;
     }
     public Blogg createNewBlogg(Blogg blogg) {
-        Date nowDate = Date.valueOf(LocalDate.now());
+        Date nowDate = Date.valueOf(Date.now());
         Date publication = Date.valueOf(String.valueOf(blogg.getPublication()));
         if(publication.after(nowDate)) {
             return null;
