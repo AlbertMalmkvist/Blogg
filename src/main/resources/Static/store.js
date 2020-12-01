@@ -14,6 +14,10 @@ export const store = new Vuex.Store({
         appendArticle (state, article) {
             state.Article.push(article)
         },
+        DELETE_CAR(state, id){
+            index = state.Article.findIndex(article => article.id == id)
+            state.cars.splice(index, 1)
+           },
     }
 })
 export default store

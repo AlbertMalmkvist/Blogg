@@ -17,7 +17,7 @@ export default {
     </div>
     <ul>
         <ArticleSummaryItem v-for="Article of Articles" :key="Article.id" :Article="Article"
-        v-if="Date.parse(Article.publishing_time) >= Date.now()" />
+        v-if="Date.parse(Article.publishing_time) <= Date.now()" />
      </ul>
      </div>
     `,

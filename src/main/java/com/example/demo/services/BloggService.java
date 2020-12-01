@@ -14,10 +14,8 @@ public class BloggService {
     @Autowired
     BloggRepo bloggRepo;
 
-    public List<Blogg> findAllBloggs() {
+    public List<Blogg> findAllArticle() {
         List<Blogg> Article =  (List<Blogg>) bloggRepo.findAllByOrderByIdDesc();
-        for(Blogg blogg : Article) {
-        }
         return Article;
     }
     public Blogg findBlogg(int id) {
@@ -26,8 +24,8 @@ public class BloggService {
         return blogg;
     }
     public Blogg createNewBlogg(Blogg blogg) {
-        Date nowDate = Date.valueOf(Date.now());
-        Date publication = Date.valueOf(String.valueOf(blogg.getPublication()));
+        Date nowDate = Date.valueOf(LocalDate.now());
+        Date publication = Date.valueOf(blogg.getPublication());
         if(publication.after(nowDate)) {
             return null;
         }

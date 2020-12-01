@@ -24,14 +24,14 @@ export default {
                 publication: this.nowDate,
             }
             let result = await fetch('/rest/Article', {
-                method: 'DELETE',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(Article)
             })
             result = await result.json()
-            this.$store.commit('appendArticle', result)
+            this.$store.commit('removeArticle', result)
             this.valid = ""
             this.title = ''
             this.description = ''
