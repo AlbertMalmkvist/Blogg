@@ -1,8 +1,8 @@
-import ArticleSummaryItem from './ArticleSummaryItem.js'
+import bloggSummaryItem from './bloggSummaryItem.js'
 
 export default {
     components: {
-        ArticleSummaryItem
+        bloggSummaryItem
     },
     data(){
      return {
@@ -16,15 +16,15 @@ export default {
     <input type="text" v-model="search" placeholder="Search title.."/>
     </div>
     <ul>
-        <ArticleSummaryItem v-for="Article of Articles" :key="Article.id" :Article="Article"
-        v-if="Date.parse(Article.publishing_time) <= Date.now()" />
+        <bloggSummaryItem v-for="blogg of bloggs" :key="blogg.id" :blogg="blogg"
+        v-if="Date.parse(blogg.publishing_time) >= Date.now()" />
      </ul>
      </div>
     `,
     computed: {
-        Articles() {
-            return this.$store.state.Articles.filter((Article) => {
-                return Article.title.toLowerCase().match(this.search.toLowerCase());
+        bloggs() {
+            return this.$store.state.bloggs.filter((blogg) => {
+                return blogg.title.toLowerCase().match(this.search.toLowerCase());
             })
         }
     },
