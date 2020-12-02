@@ -28,6 +28,7 @@ public class BloggController {
     public Blogg createNewBlogg(@RequestBody Blogg blogg) {
         return bloggService.createNewBlogg(blogg);
     }
+    
     @PostMapping("/Article/{id}")
     public Blogg deleteBlogg(@PathVariable int id){
         return bloggService.deletebyid(id);

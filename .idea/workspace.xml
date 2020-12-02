@@ -4,7 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7b20d9-c3c0-49f1-a33f-8a815ce07b68" name="Default Changelist" comment="" />
+    <list default="true" id="ef7b20d9-c3c0-49f1-a33f-8a815ce07b68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

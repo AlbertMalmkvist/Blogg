@@ -7,7 +7,7 @@ export const store = new Vuex.Store({
         Article: [],
     },
     mutations: {
-        setBloggs(state, Article) {
+        setbloggs(state, Article) {
             state.Article = Article
         },
         appendblogg (state, blogg) {
