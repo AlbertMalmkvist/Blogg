@@ -1,28 +1,32 @@
-//import bloggSummaryItem from './bloggSummaryItem.js'
-   // components: {
- //       bloggSummaryItem
-   // },
+import bloggSummaryItem from './bloggSummaryItem.js'
 
 export default {
+    components: {
+        bloggSummaryItem
+    },
+    data(){
+     return {
+         search:"",
+     }
+    },
    template: ` 
    <div>
-       <label>List</label>
+   <div class="search-wrapper">
+        <label>Search title:</label>
+    <input type="text" v-model="search" placeholder="Search title.."/>
+    </div>
     <ul>
-        <li @click.self="showBloggDetails(blogg.id)" v-for="blogg of Article" :key="blogg.id" class="Bloggtext">
-                    Title: {{ blogg.title }} <br>
-                    Published: {{ blogg.publication }} <br/>
-        </li>
+        <bloggSummaryItem v-for="blogg of Article" :key="article.id" :article="article" />
      </ul>
      </div>
     `,
+    async created(){
+    },
     computed: {
         Article() {
-            return this.$store.state.Article
+            return this.$store.state.Article.filter((blogg) => {
+                return blogg.title.toLowerCase().match(this.search.toLowerCase());
+            })
         }
-    },
-    methods: {
-        showBloggDetails(id) {
-            this.$router.push('/Article/' + id)
-        }
-    },
+    }
 }
