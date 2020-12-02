@@ -20,13 +20,13 @@ export default {
      </ul>
      </div>
     `,
+    async created(){
+    },
     computed: {
         Article() {
             return this.$store.state.Article.filter((blogg) => {
                 return blogg.title.toLowerCase().match(this.search.toLowerCase());
             })
         }
-    },
-    methods: {
     }
 }
