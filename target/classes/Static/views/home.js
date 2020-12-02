@@ -1,13 +1,13 @@
-import listAllBlogg from '../components/bloggSummaryList.js'
+import listAllBloggs from '../components/bloggSummaryList.js'
 
 export default {
     components: {
-        listAllBlogg
+        listAllBloggs
     },
     
     template: `
         <div class="main-listing">
-            <listAllBlogg />
+            <listAllBloggs />
         </div>
     `,
 
@@ -16,6 +16,6 @@ export default {
         let Article = await fetch('/rest/Article')
         Article = await Article.json()
 
-        this.$store.commit('setArticle', Article)
+        this.$store.commit('setBlogg', Article)
       }
 }

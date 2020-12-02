@@ -15,8 +15,8 @@ public class BloggController {
     BloggService bloggService;
 
     @GetMapping("/Article")
-    public List<Blogg> getAllArticle(){
-        return bloggService.findAllArticle();
+    public List<Blogg> getAllBloggs(){
+        return bloggService.findAllBloggs();
     }
 
     @GetMapping("/Article/{id}")
@@ -27,5 +27,9 @@ public class BloggController {
     @PostMapping("/Article")
     public Blogg createNewBlogg(@RequestBody Blogg blogg) {
         return bloggService.createNewBlogg(blogg);
+    }
+    @PostMapping("/Article/{id}")
+    public Blogg deleteBlogg(@PathVariable int id){
+        return bloggService.deletebyid(id);
     }
 }

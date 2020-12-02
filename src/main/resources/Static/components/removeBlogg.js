@@ -10,20 +10,15 @@ export default {
     `,
     data() {
         return {
-            title: '',
-            description: '',
-            publication: '',
             valid: ""
         }
     },
     methods: {
         async removeBlogg() {
             let Article = {
-                title: this.title,
-                description: this.description,
-                publication: this.nowDate,
+                removing = Article.id
             }
-            let result = await fetch('/rest/Article', {
+            let result = await fetch('/rest/Article/remove', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

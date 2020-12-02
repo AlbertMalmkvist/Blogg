@@ -7,21 +7,16 @@ export const store = new Vuex.Store({
         Article: [],
     },
     mutations: {
-        setArticle(state, Article) {
+        setBloggs(state, Article) {
             state.Article = Article
         },
-        appendArticle (state, article) {
-            state.Article.push(article)
+        appendblogg (state, blogg) {
+            state.Article.push(blogg)
         },
-        getArticle(state, bids) {
-            bids.forEach(bid => {
-                let auction = state.auctions.find(auction => auction.id === bid.auction_id)
-                auction.highestBid = bid.bid
-            })
-        },
-        removeArticle(state, id){
-            state.Article.remove(id)
-        },
+        removeblogg(state, id){
+            let index = state.Article.findIndex(Article => Article.id == id)
+            state.Article.splice(index, 1)
+           },
     }
 })
 export default store

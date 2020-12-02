@@ -13,6 +13,7 @@ async function getAllBloggs() {
     let Article = await fetch('/rest/Article')
     Article = await Article.json()
     console.log(Article)
+    this.$store.commit('setblogg', Article)
 }
 
 async function getBloggById(id) {

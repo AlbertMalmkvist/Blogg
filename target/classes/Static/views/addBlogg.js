@@ -1,6 +1,5 @@
 import newBlogg from '../components/addNewBlogg.js'
 
-
 export default {
     components: {
         newBlogg

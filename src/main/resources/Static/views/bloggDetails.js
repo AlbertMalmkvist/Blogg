@@ -7,9 +7,9 @@ export default {
     template: `
     <div class="Article-details">
         <div>
-        <h2>{{Article.title}}</h2>
-        <p class="a-description">Description: {{Article.description}}</p>
-        <p>Published: {{Article.published}}</p>
+        <h2>{{blogg.title}}</h2>
+        <p class="a-description">Description: {{blogg.description}}</p>
+        <p>Published: {{blogg.published}}</p>
        
 
         </div>
@@ -17,7 +17,7 @@ export default {
     `,
     data() {
         return {
-            Article: {
+            blogg: {
                 title: '',
                 description: '',
                 published: '',
@@ -25,8 +25,8 @@ export default {
         }
     },
     async created() {
-        let Article = await fetch('/rest/Article/' + this.$route.params.id)
-        Article = await Article.json() 
-       this.Article = Article
+        let blogg = await fetch('/rest/Article/' + this.$route.params.id)
+        blogg = await blogg.json()
+        this.blogg = blogg
      },
 }

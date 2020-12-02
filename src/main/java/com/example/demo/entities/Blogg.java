@@ -3,7 +3,7 @@ package com.example.demo.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "blogg")
+@Table(name = "Article")
 public class Blogg {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,15 +12,7 @@ public class Blogg {
     private String description;
     private String publication;
 
-    public Blogg {
-    }
-
-    public String getPublication() {
-        return publication;
-    }
-
-    public void setPublication(String publication) {
-        this.publication = publication;
+    public Blogg() {
     }
 
     public int getId() {
@@ -45,5 +37,13 @@ public class Blogg {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getPublication() {
+        return publication;
+    }
+
+    public void setPublication(String publication) {
+        this.publication = publication;
     }
 }
