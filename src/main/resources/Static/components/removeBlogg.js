@@ -15,7 +15,7 @@ export default {
     methods: {
         async removeBlogg() {
             let Article = {
-                removing = Article.id
+                removing = this.blogg.id
             }
             let result = await fetch('/rest/Article/remove', {
                 method: 'POST',
