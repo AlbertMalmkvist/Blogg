@@ -29,7 +29,7 @@ public class BloggController {
         return bloggService.createNewBlogg(blogg);
     }
     
-    @PostMapping("/Article/{id}")
+    @DeleteMapping("/Article/{id}")
     public Blogg deleteBlogg(@PathVariable int id){
         return bloggService.deletebyid(id);
     }

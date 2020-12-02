@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef7b20d9-c3c0-49f1-a33f-8a815ce07b68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/BloggController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/BloggController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/BloggRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/BloggRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Static/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

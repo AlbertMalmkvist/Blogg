@@ -8,16 +8,3 @@ new Vue({
     router,
     render: h => h(app)
 }).$mount('#app');
-
-async function getAllBloggs() {
-    let Article = await fetch('/rest/Article')
-    Article = await Article.json()
-    console.log(Article)
-    this.$store.commit('setblogg', Article)
-}
-
-async function getBloggById(id) {
-    let blogg = await fetch('/rest/Article' + id)
-    blogg = await blogg.json()
-    console.log(blogg)
-}
