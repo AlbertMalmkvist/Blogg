@@ -31,6 +31,6 @@ public class BloggController {
     
     @DeleteMapping("/Article/{id}")
     public Blogg deleteBlogg(@PathVariable int id){
-        return bloggService.deletebyid(id);
+        return bloggService.deleteById(id);
     }
 }

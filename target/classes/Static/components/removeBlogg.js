@@ -3,20 +3,22 @@ export default {
    
     template: `
         <form @submit.prevent = "removeBlogg">
-
             <button>Delete</button>
-            <p>{{valid}}</p>
         </form>
     `,
     data() {
         return {
-            valid: ""
+            article: "",
+            title: "",
+            description: "",
+            publication: "",
         }
     },
     methods: {
         async removeBlogg() {
             let Article = {
-                removing = Article.id
+                article = this.blogg.id
+                
             }
             let result = await fetch('/rest/Article/remove', {
                 method: 'POST',
@@ -28,9 +30,6 @@ export default {
             result = await result.json()
             this.$store.commit('removeBlogg', result)
             this.valid = ""
-            this.title = ''
-            this.description = ''
-            this.publication = ''
     }
 }
 }

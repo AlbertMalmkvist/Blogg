@@ -1,8 +1,8 @@
-//import removeBlogg from  '../components/removeBlogg.js'
+import removeBlogg from  '../components/removeBlogg.js'
 
 export default {
     components: {
-        //removeBlogg,<removeBlogg ><removeBlogg/>
+        removeBlogg
     },
     template: `
     <div class="Article-details">
@@ -10,7 +10,7 @@ export default {
         <h2>{{blogg.title}}</h2>
         <p class="a-description">Description: {{blogg.description}}</p>
         <p>Published: {{blogg.published}}</p>
-       
+       <removeBlogg :blogg="blogg"><removeBlogg/>
 
         </div>
     </div>
@@ -25,12 +25,8 @@ export default {
         }
     },
     async created() {
-        
-        console.log(this.$route.params.id);
         let blogg = await fetch('/rest/Article/' + this.$route.params.id)
         blogg = await blogg.json()
-        console.log(blogg);
         this.blogg = blogg
-        this.$store.commit(setbloggs, blogg)
      },
 }

@@ -24,7 +24,7 @@ public class BloggService {
     public Blogg createNewBlogg(Blogg blogg) {
         return bloggRepo.save(blogg);
     }
-    public Blogg deletebyid(int id){
+    public Blogg deleteById(int id){
         Blogg blogg = bloggRepo.deleteById(id);
         if ( blogg == null ) return null;
         return blogg;
