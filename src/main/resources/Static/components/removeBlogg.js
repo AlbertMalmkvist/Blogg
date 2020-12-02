@@ -3,7 +3,6 @@ export default {
    
     template: `
         <form @submit.prevent = "removeBlogg">
-
             <button>Delete</button>
             <p>{{valid}}</p>
         </form>

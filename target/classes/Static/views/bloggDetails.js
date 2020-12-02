@@ -2,7 +2,7 @@
 
 export default {
     components: {
-        //removeBlogg,<removeBlogg><removeBlogg/>
+        //removeBlogg,<removeBlogg ><removeBlogg/>
     },
     template: `
     <div class="Article-details">
@@ -25,8 +25,12 @@ export default {
         }
     },
     async created() {
+        
+        console.log(this.$route.params.id);
         let blogg = await fetch('/rest/Article/' + this.$route.params.id)
         blogg = await blogg.json()
+        console.log(blogg);
         this.blogg = blogg
+        this.$store.commit(setbloggs, blogg)
      },
 }

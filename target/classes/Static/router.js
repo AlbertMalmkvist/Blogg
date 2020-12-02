@@ -34,4 +34,20 @@ const router = new VueRouter({
     }
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.reguiresAuth)) {
+    // need login
+    if (!store.state.user) {
+      next({
+        name: "home"
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
 export default router;
