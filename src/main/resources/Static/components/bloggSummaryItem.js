@@ -1,5 +1,5 @@
 /*import removeblogg from "./removeBlogg"
-       <removeBlogg :blogg="blogg"><removeBlogg/>;
+       <removeBlogg :blogg="blogg"></removeBlogg>;
     components:{
         removeblogg
     },*/
@@ -9,7 +9,6 @@ export default {
 
     template: `
     <div>
-    <label>Checking</label> 
         <li @click.self="showBloggDetails(blogg.id)" class="Article-card">
                     Title: {{ blogg.title }} <br>
                     Published: {{ blogg.publication }} <br/>

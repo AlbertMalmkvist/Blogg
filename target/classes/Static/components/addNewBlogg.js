@@ -27,8 +27,6 @@ export default {
                 description: this.description,
                 publication: Date.now(),
             }
-            console.log(title)
-
             let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
@@ -40,7 +38,6 @@ export default {
             this.$store.commit('appendblogg', result)
             this.confirmationMessage = this.title + ' has been added as an Article.'
             this.valid = ""
-              //clearing the fields
         this.title = ''
         this.description = ''
         this.publication = ''
