@@ -3,24 +3,26 @@ export default {
    
     template: `
         <form @submit.prevent = "removeBlogg">
+              <input required v-model = "title" type = "text" placeholder = "Enter id">
             <button>Delete</button>
         </form>
     `,
     data() {
         return {
-            article: "",
+            title: "",
         }
     },
     methods: {
         async removeBlogg() {
             let Article = {
-                article = this.blogg.id
+                title : this.title
+
             }
-            let result = await fetch('/rest/Article/'+ this.$route.params.id, {
+            let result = await fetch('/rest/Article/'+ this.title, {
                 method: 'delete',
             })
-            result = await result.json()
-            this.$store.commit('removeBlogg', result)
+            result = await result.json(result)
+            this.$store.commit('removeblogg', result)
             this.valid = ""
     }
 }

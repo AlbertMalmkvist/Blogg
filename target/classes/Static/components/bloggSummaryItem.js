@@ -1,5 +1,5 @@
 /*import removeblogg from "./removeBlogg"
-       <removeBlogg :Article="Article"><removeBlogg/>;
+       <removeBlogg :blogg="blogg"><removeBlogg/>;
     components:{
         removeblogg
     },*/

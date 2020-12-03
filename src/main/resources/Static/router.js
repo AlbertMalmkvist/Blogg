@@ -2,6 +2,11 @@ import Vue from './libs/vue.esm.browser.js'
 import VueRouter from './libs/vue-router.esm.browser.js'
 import store from '/store.js'
 
+  /*  {
+    name: "deleteBlogg",
+    path: '/deleteBlogg',
+    component: deleteBlogg,
+    },*/
 Vue.use(VueRouter)
 
 import home from './views/home.js'
@@ -23,11 +28,6 @@ const router = new VueRouter({
       component: bloggDetails
     },
     {
-    name: "deleteBlogg",
-    path: '/deleteBlogg',
-    component: deleteBlogg,
-    },
-    {
       name: "addBlogg",
       path: '/addBlogg',
       component: addBlogg,
@@ -40,4 +40,5 @@ const router = new VueRouter({
     }
   ]
 });
+
 export default router;

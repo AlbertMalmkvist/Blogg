@@ -20,6 +20,10 @@ export default {
             }
             let result = await fetch('/rest/Article/'+ this.title, {
                 method: 'delete',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            body: JSON.stringify(Article)
             })
             result = await result.json(result)
             this.$store.commit('removeblogg', result)

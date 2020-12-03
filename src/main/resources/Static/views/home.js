@@ -7,7 +7,7 @@ export default {
     
     template: `
         <div class="main-listing">
-            <listAllBloggs />
+            <listAllBloggs> </listAllBloggs>
         </div>
     `,
 }

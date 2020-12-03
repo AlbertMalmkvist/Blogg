@@ -13,13 +13,13 @@ export const store = new Vuex.Store({
         appendblogg (state, blogg) {
             state.Article.push(blogg)
         },
-        updateHighestbloggs(state, bloggs) {
+        updatenewest(state, bloggs) {
             bloggs.forEach(Article => {
-                let blogg = state.Article.find(blogg => blogg.id === Article.id)
+                let blogg = state.Article.find(blogg => blogg.id === Article.publish)
                 blogg.highestBid = Article.Article
             })},
-        removeblogg(state, id){
-            let index = state.Article.findIndex(Article => Article.id == id)
+        removeblogg(state, title){
+            let index = state.Article.findIndex(Article => Article.title == title)
             state.Article.splice(index, 1)
            },
     }

@@ -12,7 +12,7 @@ public class Blogg {
     private String description;
 
     @Column(name = "publication")
-    private long publication;
+    private long published;
 
     public Blogg() {
     }
@@ -44,10 +44,10 @@ public class Blogg {
     }
 
     public long getPublication() {
-        return publication;
+        return published;
     }
 
-    public void setPublication(long publication) {
-        this.publication = publication;
+    public void setPublication(long published) {
+        this.published = published;
     }
 }

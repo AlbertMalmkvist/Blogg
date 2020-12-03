@@ -10,21 +10,14 @@ export default {
      }
     },
    template: ` 
-    <div>
-        <button @click = "getArticle"> Fetch Article <br></button>
-    </div>
+    <div class = "Article-back">
     <ul>
         <bloggSummaryItem v-for="blogg of Article" :key="blogg.id" :blogg="blogg" />
      </ul>
      </div>
     `,
-    template: `
-    `,
-    methods: {
-        async getArticle() {
-            let blogg = await fetch ('/rest/Article')
-            blogg = await blogg.json()
-            console.log(blogg)
-        },
-    
-}}
+    computed: {
+        Article() {
+            return this.$store.state.Article
+        }},
+}

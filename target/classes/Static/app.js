@@ -4,6 +4,7 @@ export default {
         <nav class="navbar-top">
           <router-link to="/">Home</router-link>
           <router-link to="/addBlogg" >Add Article</router-link>
+          <router-link to="/deleteBlogg" >remove Article</router-link>
         </nav>
         <div class="top-picture"> Gamers Article </div>
         <main>
@@ -11,8 +12,4 @@ export default {
         </main>
       </div>
     `,
-  async created() {
-    let Article = await fetch('/rest/Article')
-    Article = await Article.json()
-    this.$store.commit('setbloggs', Article)
 }
