@@ -1,10 +1,10 @@
+
+              //  <input required v-model = "publication" type = "text-box" placeholder = "Enter todays date">
 export default {
     template: `
         <form @submit.prevent = "addNewBlogg" class = "bloggform">
               <input required v-model = "title" type = "text" placeholder = "Enter title">
                 <input required v-model = "description" type = "text-box" placeholder = "Enter description">
-                <input required v-model = "publication" type = "text-box" placeholder = "Enter todays date">
-
             <button>Add Article</button>
             <p>{{ confirmationMessage }}</p>
             <p>{{valid}}</p>
@@ -14,7 +14,7 @@ export default {
         return {
             title: '',
             description: '',
-            publication: '',
+            publication: Date.now(),
             confirmationMessage: '',
             valid: ""
         }
@@ -25,10 +25,9 @@ export default {
             let blogg = {
                 title: this.title,
                 description: this.description,
-                publication: this.publication,
+                publication: Date.now(),
             }
-            let publish =  Date.parse(this.publication)
-            if(publish>0){
+
             let result = await fetch('/rest/Article', {
                 method: 'POST',
                 headers: {
@@ -44,13 +43,6 @@ export default {
         this.title = ''
         this.description = ''
         this.publication = ''
-
-
-        }else {
-             this.valid = "invalid date, try again"
-             this.confirmationMessage = ""
-
-        }
     }
 }
 }

@@ -10,9 +10,4 @@ export default {
             <listAllBloggs />
         </div>
     `,
-    async created() {
-        let blogg = await fetch('/rest/Article')
-        blogg = await blogg.json()
-        this.$store.commit('setblogg', blogg)
-      }
 }

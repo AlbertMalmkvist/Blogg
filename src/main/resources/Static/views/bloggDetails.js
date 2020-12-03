@@ -25,9 +25,8 @@ export default {
         }
     },
         async created() {
-            let blogg = await fetch('/rest/Article')
-            blogg = await blogg.json()
-            this.$store.commit('setblogg', blogg)
+            let blogg =  fetch('/rest/Article')
+            blogg =  blogg.json()
             blogg = this.blogg
           }
 }

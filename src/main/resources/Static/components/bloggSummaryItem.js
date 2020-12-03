@@ -1,5 +1,5 @@
 /*import removeblogg from "./removeBlogg"
-       <removeBlogg :auction="auction"><removeBlogg/>;
+       <removeBlogg :blogg="blogg"><removeBlogg/>;
     components:{
         removeblogg
     },*/

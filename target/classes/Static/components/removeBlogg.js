@@ -9,23 +9,15 @@ export default {
     data() {
         return {
             article: "",
-            title: "",
-            description: "",
-            publication: "",
         }
     },
     methods: {
         async removeBlogg() {
             let Article = {
                 article = this.blogg.id
-                
             }
-            let result = await fetch('/rest/Article/remove', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(Article)
+            let result = await fetch('/rest/Article/'+ this.$route.params.id, {
+                method: 'delete',
             })
             result = await result.json()
             this.$store.commit('removeBlogg', result)

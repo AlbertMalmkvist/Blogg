@@ -1,16 +1,16 @@
-import removeBlogg from  '../components/removeBlogg.js'
-
-export default {
+/*import removeBlogg from  '../components/removeBlogg.js'
+       <removeBlogg :blogg="blogg"><removeBlogg/>
     components: {
         removeBlogg
-    },
+    },*/
+
+export default {
     template: `
     <div class="Article-details">
         <div>
         <h2>{{blogg.title}}</h2>
         <p class="a-description">Description: {{blogg.description}}</p>
         <p>Published: {{blogg.published}}</p>
-       <removeBlogg :blogg="blogg"><removeBlogg/>
 
         </div>
     </div>
@@ -24,9 +24,9 @@ export default {
             }
         }
     },
-    async created() {
-        let blogg = await fetch('/rest/Article/' + this.$route.params.id)
-        blogg = await blogg.json()
-        this.blogg = blogg
-     },
+        async created() {
+            let blogg =  fetch('/rest/Article')
+            blogg =  blogg.json()
+            blogg = this.blogg
+          }
 }

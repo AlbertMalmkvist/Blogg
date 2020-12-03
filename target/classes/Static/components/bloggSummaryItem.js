@@ -1,9 +1,10 @@
-import removeblogg from "./removeBlogg";
-
-export default {
+/*import removeblogg from "./removeBlogg"
+       <removeBlogg :Article="Article"><removeBlogg/>;
     components:{
         removeblogg
-    },
+    },*/
+
+export default {
     props: ['blogg'],
 
     template: `
@@ -12,7 +13,6 @@ export default {
         <li @click.self="showBloggDetails(blogg.id)" class="Article-card">
                     Title: {{ blogg.title }} <br>
                     Published: {{ blogg.publication }} <br/>
-       <removeBlogg :auction="auction"><removeBlogg/>
         </li>
         </div>
     `,

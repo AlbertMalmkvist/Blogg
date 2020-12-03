@@ -10,21 +10,21 @@ export default {
      }
     },
    template: ` 
-   <div>
-   <div class="search-wrapper">
-        <label>Search title:</label>
-    <input type="text" v-model="search" placeholder="Search title.."/>
+    <div>
+        <button @click = "getArticle"> Fetch Article <br></button>
     </div>
     <ul>
         <bloggSummaryItem v-for="blogg of Article" :key="blogg.id" :blogg="blogg" />
      </ul>
      </div>
     `,
-    computed: {
-        Article() {
-            return this.$store.state.Article.filter((blogg) => {
-                return blogg.title.toLowerCase().match(this.search.toLowerCase());
-            })
-        }
-    }
-}
+    template: `
+    `,
+    methods: {
+        async getArticle() {
+            let blogg = await fetch ('/rest/Article')
+            blogg = await blogg.json()
+            console.log(blogg)
+        },
+    
+}}

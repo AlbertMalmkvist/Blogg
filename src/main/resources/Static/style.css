@@ -44,16 +44,8 @@ body{
     line-height: 400px;
     font-size: 125px;
 }
-ul {
-    display: flex;
-    padding: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 0 0;
-}
 
-.auction-card  {
+.Article-card  {
     list-style: none;
     background-color: rgb(0, 0, 0);
     min-height: 400px;
@@ -64,12 +56,12 @@ ul {
     cursor: pointer;
 }
 
-.auction-card:hover {
+.Article-card:hover {
     border: 1px solid gray;
 }
 
 
-.auction-main-picture {
+.Article-main-picture {
     height: 300px;
     width: 300px;
     background-position: center;
@@ -77,14 +69,14 @@ ul {
     margin-right: 20px;
 }
 
-.auction-details {
+.Article-details {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
 }
 
-.auction-details > {
+.Article-details > {
     padding: 10px;
 }
 
@@ -94,7 +86,7 @@ ul {
     opacity: 80%;
 }
 
-.auctionform {
+.Articleform {
     text-align: right;
     background-color: rgb(245, 244, 244);
     background-size: cover;

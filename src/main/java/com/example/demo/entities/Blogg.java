@@ -10,9 +10,13 @@ public class Blogg {
     private int id;
     private String title;
     private String description;
-    private String publication;
+
+    @Column(name = "publication")
+    private long publication;
 
     public Blogg() {
+    }
+    public Blogg(int id, String title, String description, int publication) {
     }
 
     public int getId() {
@@ -39,11 +43,11 @@ public class Blogg {
         this.description = description;
     }
 
-    public String getPublication() {
+    public long getPublication() {
         return publication;
     }
 
-    public void setPublication(String publication) {
+    public void setPublication(long publication) {
         this.publication = publication;
     }
 }

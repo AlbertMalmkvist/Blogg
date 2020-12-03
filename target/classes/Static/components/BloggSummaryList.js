@@ -20,6 +20,18 @@ export default {
      </ul>
      </div>
     `,
+   async created() {
+            this.fetchInterval = setInterval(async () => {
+                let blogg_ids = this.$store.state.Article.map(blogg => blogg.id.toString())
+                let Article_query_string = blogg_ids.join(',')
+                let publish = await fetch('/rest/Article/newest/' + Article_query_string)
+                publish = await publish.json()
+            	this.$store.commit('updatenewest', publish)
+            }, 1000)
+    },
+    beforeDestroy() {
+        clearInterval(this.fetchInterval)
+    },
     computed: {
         Article() {
             return this.$store.state.Article.filter((blogg) => {
