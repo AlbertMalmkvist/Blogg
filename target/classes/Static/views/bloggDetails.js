@@ -10,8 +10,7 @@ export default {
         <h2>{{blogg.title}}</h2>
         <p class="a-description">Description: {{blogg.description}}</p>
         <p>Published: {{blogg.published}}</p>
-       <removeBlogg ></removeBlogg>
-
+       <removeBlogg :blogg='blogg'></removeBlogg>
         </div>
     </div>
     `,

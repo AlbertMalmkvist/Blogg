@@ -12,7 +12,7 @@ export const store = new Vuex.Store({
            }
     },
     mutations: {
-        setBloggs(state, Article) {
+        setArticle(state, Article) {
             state.Article = Article
         },
         appendBlogg (state, blogg) {

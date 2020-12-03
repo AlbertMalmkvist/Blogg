@@ -3,6 +3,7 @@ export default {
    
     template: `
         <form @submit.prevent = "removeBlogg">
+              <input required v-model = "title" type = "text" placeholder = "Enter title">
             <button>Delete</button>
         </form>
     `,
