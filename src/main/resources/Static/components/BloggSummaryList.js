@@ -16,6 +16,11 @@ export default {
      </ul>
      </div>
     `,
+    async created() {
+        let Article = await fetch('/rest/Article')
+        //Article = await Article.json()
+          this.$store.commit('setBloggs', Article)
+    },
     computed: {
         Article() {
             return this.$store.state.Article

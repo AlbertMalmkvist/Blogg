@@ -21,7 +21,7 @@ public class BloggController {
 
     @GetMapping("/Article/{id}")
     public Blogg getBlogg(@PathVariable int id) {
-        return bloggService.findBlogg(id);
+        return bloggService.findBloggbyId(id);
     }
 
     @PostMapping("/Article")

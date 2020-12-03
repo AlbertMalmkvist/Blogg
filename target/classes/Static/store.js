@@ -6,6 +6,11 @@ export const store = new Vuex.Store({
     state: {
         Article: [],
     },
+    getters: {
+           Article: state => {
+               return state.Article
+           }
+    },
     mutations: {
         setbloggs(state, Article) {
             state.Article = Article

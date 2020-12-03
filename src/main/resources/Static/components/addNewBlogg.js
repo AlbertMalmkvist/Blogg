@@ -35,7 +35,7 @@ export default {
                 body: JSON.stringify(blogg)
             })
             result = await result.json()
-            this.$store.commit('appendblogg', result)
+            this.$store.commit('appendBlogg', result)
             this.confirmationMessage = this.title + ' has been added as an Article.'
             this.valid = ""
         this.title = ''

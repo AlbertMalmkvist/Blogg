@@ -24,7 +24,7 @@ export default {
             body: JSON.stringify(Article)
             })
             result = await result.json(result)
-            this.$store.commit('removeblogg', result)
+            this.$store.commit('removeBlogg', result)
             this.valid = ""
             this.$router.push('/')
     }
