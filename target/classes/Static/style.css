@@ -47,7 +47,7 @@ body{
 
 .Article-card  {
     list-style: none;
-    background-color: rgb(0, 0, 0);
+    background-color:red;
     min-height: 400px;
     padding: 7px;
     margin: 5px;

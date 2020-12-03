@@ -7,7 +7,13 @@ export default {
     
     template: `
         <div class="main-listing">
-            <listAllBloggs />
+            <listAllBloggs> </listAllBloggs>
         </div>
     `,
+    async created() {
+
+        let Article = await fetch('/rest/Article')
+        Article = await Article.json()
+        this.$store.commit('setbloggs', Article)
+      }
 }

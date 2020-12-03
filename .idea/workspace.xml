@@ -7,23 +7,19 @@
     <list default="true" id="ef7b20d9-c3c0-49f1-a33f-8a815ce07b68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bloggen.db" beforeDir="false" afterPath="$PROJECT_DIR$/Bloggen.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Blogg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Blogg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/BloggService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/services/BloggService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/addNewBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/addNewBlogg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/BloggSummaryList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Static/components/removeBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/components/removeBlogg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/bloggDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/bloggDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/BloggSummaryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/BloggSummaryList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/bloggSummaryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/bloggSummaryItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Static/views/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bloggen-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bloggen-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Bloggen-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Bloggen-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Static/components/addNewBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/addNewBlogg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Static/components/removeBlogg.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/components/removeBlogg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Static/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Static/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Static/views/bloggDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/views/bloggDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Static/views/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Static/views/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Blogg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Blogg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/services/BloggService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/services/BloggService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,22 +208,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606900840096" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607001915659">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1607007994299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607001915659" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607001915658">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607007994299" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1607007994299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607001915658" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607001915656">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607007994299" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1607007994298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607001915656" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607001915658">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607007994298" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1607007994299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607001915658" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607007994299" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1606038532993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

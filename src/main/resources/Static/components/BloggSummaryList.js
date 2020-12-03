@@ -10,7 +10,7 @@ export default {
      }
     },
    template: ` 
-    <div class = "Article-back">
+    <div>
     <ul>
         <bloggSummaryItem v-for="blogg of Article" :key="blogg.id" :blogg="blogg" />
      </ul>

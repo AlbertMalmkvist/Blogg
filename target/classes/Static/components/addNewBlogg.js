@@ -27,6 +27,7 @@ export default {
                 description: this.description,
                 publication: Date.now(),
             }
+            console.log(title)
 
             let result = await fetch('/rest/Article', {
                 method: 'POST',

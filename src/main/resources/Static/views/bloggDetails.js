@@ -3,6 +3,7 @@ import removeBlogg from  '../components/removeBlogg.js'
 export default {
     components: {removeBlogg},
     
+    
     template: `
     <div class="Article-details">
         <div>
@@ -24,7 +25,7 @@ export default {
         }
     },
         async created() {
-            let blogg =  fetch('/rest/Article')
+            let blogg =  fetch('/rest/Article'+this.$route.params.id)
             blogg =  blogg.json()
             blogg = this.blogg
           }
