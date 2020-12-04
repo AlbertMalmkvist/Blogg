@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BloggRepo extends CrudRepository<Blogg, Integer> {
     public Blogg findById(int id);
-    Iterable<Blogg> findAllByOrderByIdDesc();
+    Iterable<Blogg> findAllByOrderByPublicationDesc();
     public Blogg deleteById(int id);
 }

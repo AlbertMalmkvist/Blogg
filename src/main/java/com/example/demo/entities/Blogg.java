@@ -10,9 +10,7 @@ public class Blogg {
     private int id;
     private String title;
     private String description;
-
-    @Column(name = "publication")
-    private long publish;
+    private long publication;
 
     public Blogg() {
     }
@@ -44,10 +42,10 @@ public class Blogg {
     }
 
     public long getPublication() {
-        return publish;
+        return publication;
     }
 
     public void setPublication(long publish) {
-        this.publish = publish;
+        this.publication = publication;
     }
 }

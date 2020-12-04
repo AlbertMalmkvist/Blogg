@@ -12,7 +12,6 @@ Vue.use(VueRouter)
 import home from './views/home.js'
 import bloggDetails from './views/bloggDetails.js'
 import addBlogg from './views/addBlogg.js'
-import deleteBlogg from './views/deleteBlogg.js'
 import notFound from './views/notFound.js'
 
 const router = new VueRouter({

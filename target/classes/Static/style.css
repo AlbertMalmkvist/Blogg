@@ -8,8 +8,9 @@ main {
 }
 
 body{
+    background-image: url('./backgrounds/822u6hejX5yZUnQqXP7CiG.jpeg');
     margin: 0;
-    color: red;
+    color: darkred;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +18,7 @@ body{
 
 .navbar-top {
     display: flex;
-    background-color: red;
+    background-color: darkred;
     background-blend-mode: screen;
     flex-direction: row;
     align-items: center;
@@ -47,11 +48,11 @@ body{
 
 .Article-card  {
     list-style: none;
-    background-color:blueviolet;
-    min-height: 400px;
+    background-color:black;
+    justify-content: center;
+    align-items: center;
     padding: 7px;
     margin: 5px;
-    border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
@@ -60,18 +61,9 @@ body{
     border: 1px solid gray;
 }
 
-
-.Article-main-picture {
-    height: 300px;
-    width: 300px;
-    background-position: center;
-    background-size: cover;
-    margin-right: 20px;
-}
-
 .Article-details {
+    background-color:black;
     display: flex;
-    flex-flow: row;
     justify-content: center;
     align-items: center;
 }

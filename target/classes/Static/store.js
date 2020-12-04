@@ -4,12 +4,9 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
+        sort_by: 'publication',
+        sort_ascending: true,
         article: [],
-    },
-    getters: {
-           article: state => {
-               return state.article
-           }
     },
     mutations: {
         setarticle(state, article) {

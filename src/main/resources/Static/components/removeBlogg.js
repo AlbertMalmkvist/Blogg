@@ -3,20 +3,11 @@ export default {
    
     template: `
         <form @submit.prevent = "removeBlogg">
-              <input required v-model = "title" type = "text" placeholder = "Enter title">
             <button>Delete</button>
         </form>
     `,
-    data() {
-        return {
-            title: "",
-        }
-    },
     methods: {
         async removeBlogg() {
-            let remove = {
-                title : ""
-            }
             let result = await fetch('/rest/article/'+ this.$route.params.id, {
                 method: 'delete',
                 headers: {

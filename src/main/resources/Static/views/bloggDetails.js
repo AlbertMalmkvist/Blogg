@@ -1,7 +1,6 @@
 import removeBlogg from  '../components/removeBlogg.js'
 export default {
     components: {removeBlogg},
-    props: ['blogg'],
 
     template: `
     <div class="Article-details">
@@ -9,13 +8,23 @@ export default {
             
         <h2>{{blogg.title}}</h2>
         <p class="a-description">Description: {{blogg.description}}</p>
-        <p>Published: {{blogg.published}}</p>
+        <p>Published: {{blogg.publication}}</p>
        <removeBlogg :blogg='blogg'></removeBlogg>
         </div>
     </div>
     `,
-    computed: {
-        article() {
-            return this.$store.state.article
-        }},
+    data() {
+        return {
+            blogg: {
+                title: '',
+                description: '',
+                publication: '',
+            }
+        }
+    },
+    async created(){
+            let blogg = await fetch('/rest/article/' + this.$route.params.id)
+            blogg = await blogg.json()
+            this.blogg = blogg
+          },
 }
