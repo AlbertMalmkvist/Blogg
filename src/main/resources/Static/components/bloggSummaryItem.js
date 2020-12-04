@@ -16,13 +16,13 @@ export default {
         </div>
     `,
     computed: {
-        Article() {
-            return this.$store.state.Article
+        article() {
+            return this.$store.state.article
         }
     },
     methods: {
         showBloggDetails(id) {
-            this.$router.push('/Article/' + id)
+            this.$router.push('/article/' + id)
         }
     }
 }

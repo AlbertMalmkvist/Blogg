@@ -4,23 +4,23 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
-        Article: [],
+        article: [],
     },
     getters: {
-           Article: state => {
-               return state.Article
+           article: state => {
+               return state.article
            }
     },
     mutations: {
-        setArticle(state, Article) {
-            state.Article = Article
+        setarticle(state, article) {
+            state.article = article
         },
         appendBlogg (state, blogg) {
-            state.Article.push(blogg)
+            state.article.push(blogg)
         },
         removeBlogg(state, title){
-            let index = state.Article.findIndex(Article => Article.title == title)
-            state.Article.splice(index, 1)
+            let index = state.article.findIndex(article => article.title == title)
+            state.article.splice(index, 1)
            },
     }
 })

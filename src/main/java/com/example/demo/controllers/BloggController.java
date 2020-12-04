@@ -14,22 +14,22 @@ public class BloggController {
     @Autowired
     BloggService bloggService;
 
-    @GetMapping("/Article")
+    @GetMapping("/article")
     public List<Blogg> getAllBloggs(){
         return bloggService.findAllBloggs();
     }
 
-    @GetMapping("/Article/{id}")
+    @GetMapping("/article/{id}")
     public Blogg getBlogg(@PathVariable int id) {
         return bloggService.findBloggbyId(id);
     }
 
-    @PostMapping("/Article")
+    @PostMapping("/article")
     public Blogg createNewBlogg(@RequestBody Blogg blogg) {
         return bloggService.createNewBlogg(blogg);
     }
     
-    @DeleteMapping("/Article/{id}")
+    @DeleteMapping("/article/{id}")
     public Blogg deleteBlogg(@PathVariable int id){
         return bloggService.deleteById(id);
     }

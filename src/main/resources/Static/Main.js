@@ -10,13 +10,13 @@ new Vue({
 }).$mount('#app');
 
 async function getAllBloggs() {
-    let Article = await fetch('/rest/Article')
-    Article = await Article.json()
-    console.log(Article)
+    let article = await fetch('/rest/article')
+    article = await article.json()
+    console.log(article)
 }
 
 async function getBloggById(id) {
-    let blogg = await fetch('/rest/Article' + id)
+    let blogg = await fetch('/rest/article' + id)
     blogg = await blogg.json()
     console.log(blogg)
 }

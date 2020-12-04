@@ -15,7 +15,7 @@ export default {
     </div>
     `,
     computed: {
-        Article() {
-            return this.$store.state.Article
+        article() {
+            return this.$store.state.article
         }},
 }
