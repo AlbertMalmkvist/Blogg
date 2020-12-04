@@ -27,7 +27,7 @@ export default {
                 description: this.description,
                 publication: Date.now(),
             }
-            let result = await fetch('/rest/Article', {
+            let result = await fetch('/rest/article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
